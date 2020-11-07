@@ -2,7 +2,7 @@
   <header class="header">
     <h1 class="title">Dad Jokes</h1>
     <ul>
-      <li>
+      <li class="content">
         <nuxt-link to="/">Home</nuxt-link>
       </li>
       <li>
@@ -40,6 +40,7 @@ export default {
 .header .title {
   font-size: 3rem;
   color: #526488;
+  cursor: pointer;
 }
 
 .header ul {
@@ -52,6 +53,11 @@ export default {
   color: #fff;
   padding: 0.3rem 1rem;
   margin-right: 0.5rem;
+}
+
+/* ヘッダーにhoverしたらポインターになるようにしたい */
+.content {
+  cursor: pointer;
 }
 
 </style>
